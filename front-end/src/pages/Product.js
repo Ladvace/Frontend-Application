@@ -111,7 +111,6 @@ export default function Product() {
     axios
       .get("https://api-test.innoloft.com/product/6781/")
       .then(({ data }) => {
-        console.log(data);
         setProduct(data);
       });
   }, []);
